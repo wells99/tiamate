@@ -1,104 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<cabeça>
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="largura=largura-do-dispositivo, escala-inicial=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Início</title>
 
-  <link rel="pré-conexão" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="folha de estilo">
+    rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <roteiro>
+  <script>
     tailwind.config = {
-      tema: {
-        estender: {
-          cores: {
+      theme: {
+        extend: {
+          colors: {
             "terracota": "#64221D",
-            "mostrarda": "#F7AE1A",
+            "mostarda": "#F7AE1A",
             "preto-medio": "#292625",
             "marrom-escuro": "#3B2416",
             "marrom-claro": "#A97744",
             "marrom-branco": "#C7794A",
+            "marrom-clarinho": "#CF9A5A",
             "marrom-preto": "#3B2416",
             "cinza": "#C4C4C4",
-            "nu": "#F5E7DA",
+            "nude": "#F5E7DA",
           }
         }
       }
     }
   </script>
-  <link rel="folha de estilo" href="css/index.css">
-</cabeçalho>
+  <link rel="stylesheet" href="css/index.css">
+</head>
 
-<corpo>
-  <header class="itens flexíveis-centro justificar-centro bg-preto-medio h-28 texto-lg/[19,58px]">
-    <img class="object-scale-down" src="./imgs/Logo.png" alt="cabeçalho do logotipo">
-    <ul class="gap-11 ml-14">
+<body>
+  <header class="flex items-center justify-center bg-preto-medio h-28 text-lg/[19,58px]">
+    <img class="object-scale-down" src="./imgs/Logo.png" alt="logo header">
+    <ul class="flex text-nude items-center gap-11 ml-14">
       <li>Início</li>
       <li>Nosso Café</li>
-      <li>Notícias</li>
+      <li>Noticías</li>
       <li>Contato</li>
       <li>Cardápio</li>
     </ul>
-    <button class="bg-marrom-branco texto-preto-medio ml-56 h-12 w-56 fonte-arquivo arredondado-md fonte-semibold">
+    <button class="bg-marrom-branco text-preto-medio ml-56 h-12 w-56 font-archivo rounded-md font-semibold">
       Seja um Franqueado
-    </botão>
-  </cabeçalho>
-  <principal>
-    <seção id="banners" classe="relativo">
+    </button>
+  </header>
+  <main>
+
+    <section id="banners" class="relative">
       <h1 class="absolute mt-36 ml-36 text-nude text-6xl font-bold">Depois do café<br>eu me expresso.</h1>
-      <div class="flex gap-[29.5px] absoluto mt-[304px] ml-36">
+      <div class="flex gap-[29.5px] absolute mt-[304px] ml-36">
         <a href="#">
           <img src="./imgs/facebook-Icon.png" alt="facebook-Icon">
         </a>
         <a href="#">
-          <img src="./imgs/ícone-instagram.png" alt="ícone-instagram">
+          <img src="./imgs/instagram-Icon.png" alt="instagram-Icon">
         </a>
         <a href="#">
           <img src="./imgs/youtube-Icon.png" alt="youtube-Icon">
         </a>
         <a href="#">
-          <img src="./imgs/Ícone-do-LinkedIn.png" alt="Ícone-do-LinkedIn">
+          <img src="./imgs/LinkedIn-Icon.png" alt="LinkedIn-Icon">
         </a>
       </div>
       <img src="./imgs/Banner ContatoPage.png" alt="banner-contato">
-    </seção>
+    </section>
+
     <section id="Nossas cafeterias" class="flex flex-col items-center">
-      <div class="itens flexíveis-center mt-[113px] w-[1171px]">
-        <h1 class="text-[50px] font-bold text-marrom-claro">Nossas Cafeterias </h1>
-        <p class="ml-[555px] text-[18px] text-marrom-preto">Veja mais</p>
-        <a href="#"><img class="ml-[11px]" src="./imgs/instagram-Icon-grande.png" alt="instagram-Icon"></a>
+      <div class="flex items-center mt-[113px] w-[1171px] justify-between">
+        <h1 class="text-[50px] font-bold text-marrom-claro">Nossas Cafeterias</h1>
+        <div class="flex items-center gap-[11px]">
+          <p class="text-[18px] text-marrom-preto">Veja mais</p>
+          <a href="#"><img src="./imgs/instagram-Icon-grande.png" alt="instagram-Icon"></a>
+        </div>
       </div>
-      <div class="flex justificar-centrar lacuna-[24px] mt-[44px]">
+      <div class="flex justify-center gap-[24px] mt-[44px]">
         <img src="./imgs/cafeterias-img1.png" alt="CafeteriasImg1">
         <img src="./imgs/cafeterias-img2.png" alt="CafeteriasImg2">
         <img src="./imgs/cafeterias-img3.png" alt="CafeteriasImg3">
         <img src="./imgs/cafeterias-img4.png" alt="CafeteriasImg4">
         <img src="./imgs/cafeterias-img5.png" alt="CafeteriasImg5">
       </div>
-      <div class="flex justificar-centro mt-[62px] lacuna-[15px]">
-        <img src="./imgs/carrosselBall.png" alt="bola1">
-        <img src="./imgs/carrosselBall.png" alt="bola2">
-        <img src="./imgs/carrosselBall.png" alt="bola3">
-        <img src="./imgs/carrosselBall.png" alt="bola4">
-        <img src="./imgs/carrosselBall.png" alt="bola5">
+      <div class="flex justify-center mt-[62px] gap-[15px]">
+        <img src="./imgs/carrosselBall.png" alt="ball1">
+        <img src="./imgs/carrosselBall.png" alt="ball2">
+        <img src="./imgs/carrosselBall.png" alt="ball3">
+        <img src="./imgs/carrosselBall.png" alt="ball4">
+        <img src="./imgs/carrosselBall.png" alt="ball5">
       </div>
-    </seção>
-    <section id="valores"></section>
+    </section>
+
+    <section id="Endereço">
+      <div class="flex-col items-center justify-center  text-center mt-[149px]">
+        <p class="text-[18px]/[19.6px] text-marrom-preto">Endereço</p>
+        <h1 class="text-[50px]/[54.4px] mt-[12px] text-marrom-claro font-bold">Vem tomar um café</h1>
+      </div>
+      <div class="">
+          <img src="./imgs/localização-Icon.png" alt="localização-Icon">
+          <p class="text-[18px]/[19.6px] mt-[24.55px] text-marrom-clarinho">Unidade</p>
+          <h1 class="text-[24px]/[26.1px] mt-[2px] text-marrom-escuro font-bold">Salvador Centro - BA</h1>
+          <hr class="w-[270px]">
+          <div class="flex">
+            <div>
+              <img src="./imgs/Relogio-Icon.png" alt="Relogio-Icon">
+              <img src="./imgs/watsapp-Icon.png" alt="watsapp-Icon">
+              <img class="h-auto w-auto" src="./imgs/maps-Icon.png" alt="maps-Icon">
+            </div>
+            <div>
+              <p class="">Endereço:</p>
+              <p><br>Shopping Iguatemi Fortaleza (loja 68) Cep: 70770-560</p>
+              <p>Horário de Funcionamento:<br>Seg a Sex - 8h:00 às 18h:00 Sáb - 08h:00 às 17h:00</p>
+              <p>Contato: (85) 99691 - 7642</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
     <section id="video-cafe"></section>
     <section id="banner-segundario"></section>
-    <seção id="galeria"></seção>
-    <seção id="cardapio-carrosel"></seção>
+    <section id="galeria"></section>
+    <section id="cardapio-carrosel"></section>
     <section id="cadastro-franquiado"></section>
     <section id="depoimentos"></section>
-  </principal>
-  <rodapé>
+  </main>
+  <footer>
 
-  </rodapé>
-</corpo>
+  </footer>
+</body>
 
 </html>
