@@ -1,52 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-               "terracota": "#64221D",
-                "mostrarda": "#F7AE1A",
-                "preto-medio": "#292625",
-                "marrom-escuro": "#3B2416",
-                "marrom-claro": "#A97744",
-                "marrom-branco": "#C7794A",
-                "marrom-preto": "#3B2416",
-                "cinza": "#C4C4C4",
-                "nu": "#F5E7DA",
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "terracota": "#64221D",
+            "mostarda": "#F7AE1A",
+            "preto-medio": "#292625",
+            "marrom-escuro": "#3B2416",
+            "marrom-claro": "#A97744",
+            "marrom-branco": "#C7794A",
+            "marrom-branco-claro": "#E7E1DF",
+            "marrom-clarinho": "#CF9A5A",
+            "marrom-preto": "#3B2416",
+            "marrom-cinza": "#F5E7DA",
+            "cinza": "#C4C4C4",
+            "nude": "#F5E7DA",
           }
         }
-    </script>
-    <link rel="stylesheet" href="css/index.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  <header class="bg-preto-medio h-28 w-full">
-    <div class="flex justify-center items-center h-28 w-full">
-    <ul class="flex justify-center items-center gap-6 font-medium	text-[#F5E7DA]">
-      <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="#"><img class="object-scale-down w-[120px]" src="./imgs/Logo.png" alt="cabeçalho do logotipo"></a></li>
-      <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="index.html">Início</a></li>
-      <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="nosso-cafe.html">Nosso Café</a></li>
-      <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="#">Notícias</a></li>
-      <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="contato.html">Contato</a></li>
-      <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="cardapio.html">Cardápio</a></li>
+  <header class="flex items-center justify-center bg-preto-medio h-28 text-lg/[19,58px]">
+
+    <img class="object-scale-down" src="./imgs/Logo.png" alt="logo header">
+    <ul class="flex text-nude items-center gap-11 ml-14">
+      <li>Início</li>
+      <li>Nosso Café</li>
+      <li>Noticías</li>
+      <li>Contato</li>
+      <li>Cardápio</li>
     </ul>
-    <button class="bg-marrom-branco text-preto-medio ml-56 h-14 w-56 font-Archivo rounded-md font-semibold hover:text-[#F5E7DA] duration-200">
+    <button class="bg-marrom-branco text-preto-medio ml-56 h-12 w-56 font-archivo rounded-md font-semibold">
       Seja um Franqueado
     </button>
+
   </header>
-    
-  
+
+  <main>
+
+    <section id="banners" class="relative">
+      <h1 class="absolute mt-36 ml-36 text-nude text-6xl font-bold">O verdadeiro<br>sabor do Café.</h1>
+      <div class="flex gap-[29.5px] absolute mt-[304px] ml-36">
+        <a href="#">
+          <img src="./imgs/facebook-Icon.png" alt="facebook-Icon">
+        </a>
+        <a href="#">
+          <img src="./imgs/instagram-Icon.png" alt="instagram-Icon">
+        </a>
+        <a href="#">
+          <img src="./imgs/youtube-Icon.png" alt="youtube-Icon">
+        </a>
+        <a href="#">
+          <img src="./imgs/LinkedIn-Icon.png" alt="LinkedIn-Icon">
+        </a>
+      </div>
+      <img src="./imgs/CardapioPage Banner.png" alt="banner-contato">
+    </section>
+
+    <section class="flex justify-center gap-[218px] mt-[79px]">
+      <div>
+        <ul class="text-[18px]/[62px] gap-[35px]">
+          <li>— Lançamentos</li>
+          <li>— Expressos</li>
+          <li>— Tiamatino Coffee</li>
+          <li>— Tiamatino Cream</li>
+          <li>— Bebidas Italianas</li>
+          <li>— Cappuccino</li>
+        </ul>
+      </div>
+      <div>
+        <nav class="flex">
+          <div class="flex-col justify-center">
+            <div class="flex justify-center"><img src="./imgs/cafe-tradicional.png" alt="cafe-tradicional"></div>
+            <p class="flex pl-[60px]">Tradicional</p>
+          </div>
+          <div class="flex-col justify-center">
+            <div class="flex justify-center"><img src="./imgs/cafe-tradicional.png" alt="cafe-tradicional"></div>
+            <p class="flex pl-[60px]">Tradicional</p>
+          </div>
+          <div class="flex-col justify-center">
+            <div class="flex justify-center"><img src="./imgs/cafe-tradicional.png" alt="cafe-tradicional"></div>
+            <p class="flex pl-[60px]">Tradicional</p>
+          </div>
+        </nav>
+        <nav class="flex">
+          <div class="flex-col justify-center">
+            <div class="flex justify-center"><img src="./imgs/cafe-tradicional.png" alt="cafe-tradicional"></div>
+            <p class="flex pl-[60px]">Tradicional</p>
+          </div>
+          <div class="flex-col justify-center">
+            <div class="flex justify-center"><img src="./imgs/cafe-tradicional.png" alt="cafe-tradicional"></div>
+            <p class="flex pl-[60px]">Tradicional</p>
+          </div>
+          <div class="flex-col justify-center">
+            <div class="flex justify-center"><img src="./imgs/cafe-tradicional.png" alt="cafe-tradicional"></div>
+            <p class="flex pl-[60px]">Tradicional</p>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="bg-marrom-escuro mt-[190px] flex justify-end gap-[30px] items-center">
+      <div>
+        <p class="text-[18px]/[19.6px] text-marrom-clarinho">Entre em contato</p>
+        <h1 class="text-[50px]/[54.4px] text-marrom-cinza font-bold mt-[6px]">Abra sua Franquia</h1>
+        <p class="text-[16px]/[19.2px] text-marrom-clarinho mt-[19px]">Preencha o formulário abaixo que entraremos em
+          contato
+          com<br>você o mais rápido possível.</p>
+        <form>
+          <img class="absolute ml-[9px] mt-[14px]" src="./imgs/input-Icon-marrom.png" alt="input-Icon-marrom">
+          <input class="block w-[510px] h-[60px] mt-[31px] pl-[50px] rounded-[5px]" type="text"
+            placeholder="Nome e Sobrenome">
+          <img class="absolute ml-[9px] mt-[24px]" src="./imgs/input-Icon-marrom.png" alt="input-Icon-marrom">
+          <input class="block w-[510px] h-[60px] mt-[10px] pl-[50px] rounded-[5px]" type="email"
+            placeholder="email@exemplo.com">
+          <img class="absolute ml-[9px] mt-[24px]" src="./imgs/input-Icon-marrom.png" alt="input-Icon-marrom">
+          <input class="block w-[510px] h-[60px] mt-[10px] pl-[50px] rounded-[5px]" type="tel"
+            placeholder="Telefone com DDD">
+          <button class="w-[510px] h-[60px] bg-marrom-branco text-marrom-escuro font-semibold mt-[10px] rounded-[5px]"
+            type="submit">Enviar Cadastro</button>
+        </form>
+      </div>
+      <div>
+        <img src="./imgs/banner-sec-cardapioPage.png" alt="banner-sec-cardapioPage">
+      </div>
+    </section>
+
+    <section class="mt-[130px]">
+      <p class="flex justify-center text-[18px]/[19.6px] text-marrom-escuro">Depoimentos</p>
+      <h1 class="flex justify-center text-[50px]/[54.4px] text-marrom-claro mt-[13px] font-bold">Tudo sobre Tiamate
+        Coffee</h1>
+      <div>
+        <nav>
+          <div class="bg-marrom-branco-claro w-[400px] h-[323px] flex-col justify-center">
+            <div class="flex-col justify-center items-center">
+              <div class="flex w-[330px]"><img src="./imgs/estrelas-depoimentos.png" alt="estrelas-depoimentos"></div>
+              <div class="flex justify-center">
+                <p class="w-[330px] h-[115px] text-[14px]/[16.8px]">O café é realmente bom, e os salgados também (pedi um
+                croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava
+                pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser
+                se refrescar com um café gelado deles ou tomar um café da manhã por lá.</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <img src="./imgs/depoimento-img1.png" alt="depoimento-img1">
+              <p>Kalil Sousa</p>
+            </div>
+          </div>
+        </nav>
+        <div class="mt-[39px]"><img src="./imgs/banner-depoimentos.png" alt=""></div>
+      </div>
+    </section>
+
 </body>
+
 </html>
