@@ -11,6 +11,9 @@
           tailwind.config = {
             theme: {
               extend: {
+                heigth: {
+                  "h-100": "490px",
+                },
                 colors: {
                  "terracota": "#64221D",
                   "mostrarda": "#F7AE1A",
@@ -47,8 +50,14 @@
         Seja um Franqueado
       </button>
     </header>
+
     <main>
-      <section id="banners"></section>
+      <section id="banner" class="relative bg-black">
+        <img class="w-full" src="imgs/banner_i_01.png" alt="">
+        <div class="absolute top-28 left-32">
+          <h1>Um café quentinho aqui na Tiamate muda o dia.</h1>
+        </div>
+      </section>
       <section id="bem-vindo"></section>
       <section id="valores"></section>
       <section id="video-cafe"></section>
@@ -58,6 +67,7 @@
       <section id="cadastro-franquiado"></section>
       <section id="depoimentos"></section>
     </main>
+
     <footer>
 
     </footer>
