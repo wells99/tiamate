@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <!DOCTYPE html>
-  <html lang="pt-br">
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +9,6 @@
           tailwind.config = {
             theme: {
               extend: {
-                heigth: {
-                  "h-100": "490px",
-                },
                 colors: {
                  "terracota": "#64221D",
                   "mostrarda": "#F7AE1A",
@@ -24,7 +19,6 @@
                   "marrom-preto": "#3B2416",
                   "cinza": "#C4C4C4",
                   "nu": "#F5E7DA",
-                  "marrom-cinza": "#E7E1DF"
                 }
               }
             }
@@ -53,24 +47,321 @@
     </header>
 
     <main>
-      <section id="banner" class="relative bg-black">
-        <img class="w-full" src="imgs/banner_i_01.png" alt="">
-        <div class="absolute top-28 left-32">
-          <h1>Um café quentinho aqui na Tiamate muda o dia.</h1>
+      <section id="banner" class="relative">
+        <img class="w-full" src="imgs/banner_i_01.png" alt="Banner 1">
+        <div class="absolute top-[110px] left-[133px]">
+          <h1 class="text-[55px] text-mostarda leading-[60px]">
+            Um café quentinho<br> 
+            <span class="text-nu">aqui na Tiamate<br> muda o dia.</span>
+          </h1>
+        </div>
+        <div class="absolute flex gap-[30px] top-[302px] left-[135px]">
+          <img class="hover:cursor-pointer" src="imgs/facebook-Icon.png" alt="Facebook icone">
+          <img class="hover:cursor-pointer" src="imgs/instagram-Icon.png" alt="Instagram icone">
+          <img class="hover:cursor-pointer" src="imgs/youtube-Icon.png" alt="Youtube icone">
+          <img class="hover:cursor-pointer" src="imgs/LinkedIn-Icon.png" alt="Linkedin icone">
         </div>
       </section>
-      <section id="bem-vindo"></section>
-      <section id="valores"></section>
-      <section id="video-cafe"></section>
-      <section id="banner-segundario"></section>
-      <section id="galeria"></section>
-      <section id="cardapio-carrosel"></section>
-      <section id="cadastro-franquiado"></section>
-      <section id="depoimentos"></section>
+      <section id="bem-vindo" class="flex flex-row bg-[#E7E1DF] gap-[43px]">
+        <img src="imgs/banner_i_02.png" alt="Banner shakes e café">
+        <div class="flex flex-col align-center justify-center pr-[135px]">
+          <h6 class="text-[18px] text-marrom-escuro mb-[10px]">Para os amantes de café</h6>
+          <h2 class="text-[50px] text-marrom-claro leading-[55px] mb-[30px]">Bem-vindo a<br> Tiamate Coffee</h2>
+          <p class="text-[16px] text-marrom-preto leading-[20px]">A Tiamate Coffee traduz de maneira clara e objetiva o verdadeiro sabor do café e o seu espírito inovador. Visamos fazer parte da vida das pessoas e diferentes culturas, isso é o que nos motiva a oferecer o café mais gostoso. Por isso, selecionamos as melhores plantações, os grãos, os blends e as pessoas que vão colocar a mão na massa para fazer esse delicioso café.<br><br> Pensamos em fazer os seus momentos mais felizes, seja no café da manhã ou em uma reunião. Individualmente ou entre amigos. À Tiamate Coffee investe em um conceito atual que transmite as pessoas uma sensação de bem estar. Enquanto nosso café aproxima as pessoas, nossos serviços de Wifi gratuito as mantém conectadas. Descubra como navegar na internet enquanto você saboreia um Tiamate.</p>
+        </div>
+      </section>
+      <section id="valores" class="flex gap-[168px] mt-[163px] mx-[135px]">
+        <div class="w-1/3">
+          <div class="flex items-center gap-[16px] mb-[19px]">
+            <img src="imgs/img_i_missao.png" alt="Missão">
+            <h4 class="text-[24px] text-marrom-claro font-bold">Missão</h4>
+          </div>
+          <p class="text-[16px] text-marrom-preto leading-[20px]">
+            Fornecer soluções, produtos e serviços de maneira clara e objetiva construindo relacionamentos duradouros com a comunidade, parceiros, colaboradores e sócios, através da criação de valores.
+          </p>
+        </div>
+        <div class="w-1/3">
+          <div class="flex items-center gap-[16px] mb-[19px]">
+            <img src="imgs/img_i_visao.png" alt="Visão">
+            <h4 class="text-[24px] text-marrom-claro font-bold">Visão</h4>
+          </div>
+          <p class="text-[16px] text-marrom-preto leading-[20px]">
+            Ser referência em inovação e estimular exponencialmente a nossa gestão de maneira diversificada, próspera e justa. Com devoção e disciplina em todas as nossas operações de negócio.
+          </p>
+        </div>
+        <div class="w-1/3">
+          <div class="flex items-center gap-[16px] mb-[19px]">
+            <img src="imgs/img_i_valores.png" alt="Valores">
+            <h4 class="text-[24px] text-marrom-claro font-bold">Valores</h4>
+          </div>
+          <p class="text-[16px] text-marrom-preto leading-[20px]">
+            Amor ao Trabalho - Organização - Disciplina - Inovação - Busca Contínua Pela Qualidade - Foco no Cliente
+          </p>
+        </div>
+      </section>      
+      <section id="video-cafe" class="mx-[135px] mt-[144px]">
+        <h2 class="text-[50px] text-marrom-claro leading-[55px] font-bold mb-[83px]">Coisas boas acontecem àqueles<br> que gostam de café</h2>
+        <iframe class="w-full mb-[134px]" width="" height="600" src="https://www.youtube.com/embed/aTC_RNYtEb0?si=Gqb22Y-GQNeo7CJr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+      <section id="banner-segundario" class="relative">
+        <img class="w-full" src="imgs/banner_i_03.png" alt="Banner café autentico">
+        <div class="absolute top-[171px] left-[134px]">
+          <h2 class="text-[55px] text-marrom-branco leading-[60px] font-bold">Café Autêntico</h2>
+          <h3 class="text-[50px] text-nu leading-[55px]">Chegou nosso café!<br> Direto da fazenda.</h3>
+        </div>
+      </section>
+      <section id="galeria" class="mx-[135px]">
+        <div class="flex justify-between mt-[169px] mb-[58px]">
+          <div class="flex flex-col justify-center">
+            <h6 class="text-[18px] text-marrom-preto">Para você e seus amigos</h6>
+            <h2 class="text-[50px] text-marrom-claro font-bold">Ambiente agradável</h2>
+          </div>
+          <div class="flex items-center gap-[11px]">
+            <h6 class="text-[18px] text-marrom-preto">Veja mais</h6>
+            <img class="cursor-pointer" src="imgs/instagram-Icon-grande.png" alt="Instagram icone">
+          </div>
+        </div>
+        <div class="grid grid-cols-3">
+          <img class="w-full h-auto" src="imgs/img_i_ambiente_01.png" alt="Foto galeria 01">
+          <img class="w-full h-auto" src="imgs/img_i_ambiente_02.png" alt="Foto galeria 02">
+          <img class="w-full h-auto" src="imgs/img_i_ambiente_03.png" alt="Foto galeria 03">
+          <img class="w-full h-auto" src="imgs/img_i_ambiente_04.png" alt="Foto galeria 04">
+          <img class="w-full h-auto" src="imgs/img_i_ambiente_05.png" alt="Foto galeria 05">
+          <img class="w-full h-auto" src="imgs/img_i_ambiente_06.png" alt="Foto galeria 06">
+        </div>
+      </section>
+      <section id="cardapio-carrosel" class="flex flex-col justify-center items-center bg-[#E7E1DF]">
+        <h6 class="text-[18px] text-marrom-preto mt-[93px]">Confira nosso</h6>
+        <h2 class="text-[50px] text-marrom-claro font-bold">Cardápio</h2>
+        <div class="flex items-center gap-[70px] my-[60px]">
+          <img id="arrow-left" class="cursor-pointer w-[30px] h-[30px]" src="imgs/Arrow_2.png" alt="Seta esquerda">
+          <div id="carousel-container" class="flex overflow-hidden w-[600px]">
+            <div id="carousel-items" class="flex transition-transform duration-300">
+              <img class="w-[300px]" src="imgs/Bebidas_1.png" alt="Bebida 1">
+              <img class="w-[300px]" src="imgs/Bebidas_2.png" alt="Bebida 2">
+              <img class="w-[300px]" src="imgs/Bebidas_3.png" alt="Bebida 3">
+              <img class="w-[300px]" src="imgs/Bebidas_4.png" alt="Bebida 4">
+              <img class="w-[300px]" src="imgs/Bebidas_5.png" alt="Bebida 5">
+              <img class="w-[300px]" src="imgs/Bebidas_6.png" alt="Bebida 6">
+            </div>
+          </div>
+          <img id="arrow-right" class="cursor-pointer w-[30px] h-[30px]" src="imgs/Arrow_1.png" alt="Seta direita">
+        </div>
+        <button class="bg-[#CF9A5A] text-[18px] text-marrom-preto font-[600] h-[60px] w-[300px] rounded-[5px] mb-[80px] hover:bg-marrom-claro transition-colors duration-300 ease-in-out">Ver mais</button>
+      </section>      
+      <section id="cadastro-franquiado" class="flex gap-[68px] bg-marrom-preto">
+        <div class="mt-[69px] ml-[135px] flex-1">
+          <h5 class="text-[18px] text-[#CF9A5A]">Entre em contato</h5>
+          <h2 class="text-[50px] text-nu font-bold">Abra sua Franquia</h2>
+          <h6 class="text-[16px] text-[#cf9A5A] mb-[20px]">
+            Preencha o formulário abaixo que entraremos em contato com<br>
+            você o mais rápido possível.
+          </h6>
+          <form class="flex flex-col gap-[10px]">
+            <input class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] w-full bg-nu" type="text">
+            <input class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] w-full bg-nu" type="email">
+            <input class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] w-full bg-nu" type="tel">
+            <div class="flex gap-[10px]">
+              <select class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] flex-1 bg-nu">
+                <option></option>
+                <option>CE</option>
+                <option>SP</option>
+                <option>RJ</option>
+              </select>
+              <input class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] flex-1 bg-nu" type="text">
+            </div>
+            <select class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] w-full bg-nu">
+              <option></option>
+              <option>Instagram</option>
+              <option>Facebook</option>
+            </select>
+            <button class="border-none focus:outline-none h-[60px] bg-marrom-branco rounded-[5px] text-[16px] text-marrom-preto font-[600] hover:bg-[#c06f3d] transition-colors duration-300 ease-in-out" type="submit">
+              Enviar Cadastro
+            </button>
+          </form>
+        </div>
+        <img src="imgs/img_i_franquia.png" alt="Imagem Franquia" class="object-cover">
+      </section> 
+      <section id="depoimentos" class="px-4 md:px-0 py-[60px] md:py-[130px] relative">
+        <h6 class="text-center text-marrom-escuro text-[12px] md:text-[18px]">Depoimentos</h6>
+        <h2 class="text-center text-marrom-claro text-[24px] md:text-[50px] font-bold">Tudo sobre Tiamate Coffee
+        </h2>
+        <img 
+            class="hidden md:block md:mt-[40px]"
+            src="imgs/img_i_sobre_01.png" 
+            alt="rapaz-servindo-café"
+        />
+        <div class="overflow-y-hidden mt-[26px] relative md:absolute bottom-[196px] right-0 md:w-3/4 md:overflow-hidden">
+            <ul id="carrossel" class="flex w-[calc(calc(100%_*_5)_+_calc(16px_*_4))] md:w-[calc(calc(400px_*_5)_+_calc(40px_*_4))] gap-4 md:gap-[40px] relative duration-200 left-0">
+                <li class="flex flex-col w-1/3 md:w-[400px] bg-[#e7e1df] rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                    <div class="estrelas flex gap-[4px] mb-4">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                    </div>
+                    <p class="text-marrom-escuro text-[14px] leading-[17px] mb-3 w-full">
+                        O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.
+                    </p>
+                    <div class="flex gap-4 items-center mt-auto">
+                        <img src="imgs/isac_moura.png" alt="Isac Moura">
+                        <h6 class="text-terracota font-semibold">Isac Moura</h6>
+                    </div>
+                </li>
+                <li class="flex flex-col w-1/3 md:w-[400px] bg-[#e7e1df] rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                    <div class="estrelas flex gap-[4px] mb-4">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                    </div>
+                    <p class="text-marrom-escuro text-[14px] leading-[17px] mb-3 w-full">
+                      Excelente café no Centro da cidade.
+                      Vale a pena uma passará para quem
+                      estiver passando pela região.
+                    </p>
+                    <div class="flex gap-4 items-center mt-auto">
+                        <img src="imgs/eleonora_pereira.png" alt="Eleonora Pereira">
+                        <h6 class="text-terracota font-semibold">Eleonora Pereira</h6>
+                    </div>
+                </li>
+                <li class="flex flex-col w-1/3 md:w-[400px] bg-[#e7e1df] rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                    <div class="estrelas flex gap-[4px] mb-4">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                    </div>
+                    <p class="text-marrom-escuro text-[14px] leading-[17px] mb-3 w-full">
+                      Ótimo lugar para descansar tomando aquele café, cappuccino, matte, tiamatte...😍 meu refúgio de descanso em meio ao turbulento centro
+                      de Fortal City! rs
+                    </p>
+                    <div class="flex gap-4 items-center mt-auto">
+                        <img src="imgs/alkaline_fernandes.png" alt="Alkaline Fernandes">
+                        <h6 class="text-terracota font-semibold">Alkaline Fernandes</h6>
+                    </div>
+                </li>
+                <li class="flex flex-col w-1/3 md:w-[400px] bg-[#e7e1df] rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                    <div class="estrelas flex gap-[4px] mb-4">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                    </div>
+                    <p class="text-marrom-escuro text-[14px] leading-[17px] mb-3 w-full">
+                      Ambiente agradável, limpo, bem arrumado e com ótimas opções de lanche. Mesas organizadas, decoração bonita, atendimento rápido 😍😍😍
+                    </p>
+                    <div class="flex gap-4 items-center mt-auto">
+                        <img src="imgs/rochelly_bevilaqua.png" alt="Rochelly Beviláqua">
+                        <h6 class="text-terracota font-semibold">Rochelly Beviláqua</h6>
+                    </div>
+                </li>
+                <li class="flex flex-col w-1/3 md:w-[400px] bg-[#e7e1df] rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                    <div class="estrelas flex gap-[4px] mb-4">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                        <img src="imgs/estrela.png" alt="estrela">
+                    </div>
+                    <p class="text-marrom-escuro text-[14px] leading-[17px] mb-3 w-full">
+                      Ambiente agradável e uma boa variedade de sabores e apresentações de café. Também os bolos e tortas merecem atenção por combinar muito bem com as bebidas quentes disponíveis na casa. A localização estratégica - bem perto da Praça do Ferreira - permite fácil acesso a pé para quem está no Centro de Fortaleza.
+                    </p>
+                    <div class="flex gap-4 items-center mt-auto">
+                        <img src="imgs/manoel_costa.png" alt="Manoel Costa">
+                        <h6 class="text-terracota font-semibold">Manoel Costa</h6>
+                    </div>
+                </li>
+                <li class="flex flex-col w-1/3 md:w-[400px] bg-[#e7e1df] rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                  <div class="estrelas flex gap-[4px] mb-4">
+                      <img src="imgs/estrela.png" alt="estrela">
+                      <img src="imgs/estrela.png" alt="estrela">
+                      <img src="imgs/estrela.png" alt="estrela">
+                      <img src="imgs/estrela.png" alt="estrela">
+                      <img src="imgs/estrela.png" alt="estrela">
+                  </div>
+                  <p class="text-marrom-escuro text-[14px] leading-[17px] mb-3 w-full">
+                    Melhor local para tomar café no coração de   Fortaleza, ambiente bem climatizado e ótimos atendentes, passo horas por lá sempre quando dá.Super indico ❤️❤️ aos amantes de café com estilo.
+                  </p>
+                  <div class="flex gap-4 items-center mt-auto">
+                      <img src="imgs/nagela_marques.png" alt="Nágela Marques">
+                      <h6 class="text-terracota font-semibold">Nágela Marques</h6>
+                  </div>
+              </li>
+            </ul>
+        </div>
+        <div class="controles hidden absolute right-[60px] bottom-[130px] md:flex gap-4">
+            <div id="prev" class="w-[45px] h-[45px] bg-marrom-claro hover:bg-marrom-escuro duration-200 rounded-full flex items-center justify-center relative rotate-180 cursor-pointer">
+                <div class="w-[12px] h-[2px] bg-white"></div>
+                <div class="w-[8px] h-[8px] border-r-2 border-r-white border-b-2 border-b-white -rotate-45 absolute top-[(50%_-_8px)] left-[(50%_-_2px)]"></div>
+            </div>
+            <div id="next" class="w-[45px] h-[45px] bg-marrom-claro hover:bg-marrom-escuro duration-200 rounded-full flex items-center justify-center relative cursor-pointer">
+                <div class="w-[12px] h-[2px] bg-white"></div>
+                <div class="w-[8px] h-[8px] border-r-2 border-r-white border-b-2 border-b-white -rotate-45 absolute top-[(50%_-_8px)] left-[(50%_-_2px)]"></div>
+            </div>
+        </div>
+      </section>
     </main>
 
     <footer>
 
     </footer>
 </body>
+
+<script>
+  let c_click = 0;
+    next.onclick = () => {
+        if(c_click < 3){
+            c_click += 1;
+            carrossel.style.left = `-${c_click * 350}px`;
+        }
+    }
+    prev.onclick = () => {
+        if(c_click > 0){
+            c_click -= 1;
+            carrossel.style.left = `-${c_click * 350}px`;
+        }
+    }
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const carouselItems = document.getElementById('carousel-items');
+    const arrowLeft = document.getElementById('arrow-left');
+    const arrowRight = document.getElementById('arrow-right');
+    
+    const itemWidth = 250;
+    const itemsVisible = 3;
+    const totalItems = carouselItems.children.length;
+    let currentIndex = 0;
+    
+    const updateCarousel = () => {
+      const offset = -(currentIndex * itemWidth);
+      carouselItems.style.transform = `translateX(${offset}px)`;
+    };
+
+    const moveNext = () => {
+      if (currentIndex < totalItems - itemsVisible) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      updateCarousel();
+    };
+
+    const movePrev = () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = totalItems - itemsVisible;
+      }
+      updateCarousel();
+    };
+
+    arrowRight.addEventListener('click', moveNext);
+    arrowLeft.addEventListener('click', movePrev);
+  });
+
+</script>
 </html>
