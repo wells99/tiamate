@@ -14,6 +14,7 @@ module.exports = {
            "marrom-preto": "#3B2416",
            "cinza": "#C4C4C4",
            "nu": "#F5E7DA",
+           "marrom-cinza": "#F5E7DA",
           },
       },
     },
