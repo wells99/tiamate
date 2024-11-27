@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+  <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Início</title>
@@ -30,97 +30,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="bg-preto-medio h-28 w-full">
-      <div class="flex justify-center items-center h-28 w-full">
-      <ul class="flex justify-center items-center gap-6 font-medium	text-[#F5E7DA]">
-        <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="#"><img class="object-scale-down w-[120px]" src="./imgs/Logo.png" alt="cabeçalho do logotipo"></a></li>
-        <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="index.html">Início</a></li>
-        <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="nosso-cafe.html">Nosso Café</a></li>
-        <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="#">Notícias</a></li>
-        <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="contato.html">Contato</a></li>
-        <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="cardapio.html">Cardápio</a></li>
-      </ul>
-      <button class="bg-marrom-branco text-preto-medio ml-56 h-14 w-56 font-Archivo rounded-md font-semibold hover:text-[#F5E7DA] duration-200">
-        Seja um Franqueado
-      </button>
+    <header class="bg-preto-medio flex justify-between px-[40px] py-[10px] md:px-[80px] md:py-[20px] lg:px-[135px] lg:py-[30px]">
+      <div class="flex items-center gap-[15px] md:gap-[35px] lg:gap-[55px]">
+        <img class="cursor-pointer w-[50px] md:w-[90px] lg:w-[150px]" src="imgs/Logo.png" alt="Logo Tiamate">
+        <ul class="flex text-nu text-[6px] gap-[8px] md:text-[12px] md:gap-[20px] lg:text-[18px] lg:gap-[45px]">
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="index.html">Início</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="nosso-cafe.html">Nosso Café</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="#">Notícias</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="contato.html">Contato</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="cardapio.html">Cardápio</a></li>
+        </ul>
+      </div>
+      <button class="bg-marrom-branco text-marrom-preto rounded-[5px] font-[600] text-[6px] px-[8px] py-[6px] md:text-[10px] md:px-[14px] md:py-[8px] lg:text-[18px] lg:px-[23px] lg:py-[16px] hover:bg-marrom-claro transition-colors duration-300 ease-in-out">Seja um Franqueado</button>
     </header>
-
     <main>
       <section id="banner" class="relative">
         <img class="w-full" src="imgs/banner_i_01.png" alt="Banner 1">
-        <div class="absolute top-[110px] left-[133px]">
-          <h1 class="text-[55px] text-mostarda leading-[60px]">
+        <div class="absolute top-[30px] left-[40px] md:top-[60px] md:left-[80px] lg:top-[100px] lg:left-[120px]">
+          <h1 class=" text-[18px] leading-[20px] md:text-[27px] md:leading-[30px] lg:text-[55px] lg:leading-[60px] text-mostarda font-bold">
             Um café quentinho<br> 
             <span class="text-nu">aqui na Tiamate<br> muda o dia.</span>
           </h1>
         </div>
-        <div class="absolute flex gap-[30px] top-[302px] left-[135px]">
-          <img class="hover:cursor-pointer" src="imgs/facebook-Icon.png" alt="Facebook icone">
-          <img class="hover:cursor-pointer" src="imgs/instagram-Icon.png" alt="Instagram icone">
-          <img class="hover:cursor-pointer" src="imgs/youtube-Icon.png" alt="Youtube icone">
-          <img class="hover:cursor-pointer" src="imgs/LinkedIn-Icon.png" alt="Linkedin icone">
+        <div class="absolute flex top-[96px] left-[40px] gap-[8px] md:top-[155px] md:left-[80px] md:gap-[10px] lg:top-[290px] lg:left-[120px] lg:gap-[30px]">
+          <img class="hover:cursor-pointer h-[12px] md:h-[21px] lg:h-[33px]" src="imgs/facebook-Icon.png" alt="Facebook icone">
+          <img class="hover:cursor-pointer h-[12px] md:h-[21px] lg:h-[33px]" src="imgs/instagram-Icon.png" alt="Instagram icone">
+          <img class="hover:cursor-pointer h-[12px] md:h-[21px] lg:h-[33px]" src="imgs/youtube-Icon.png" alt="Youtube icone">
+          <img class="hover:cursor-pointer h-[12px] md:h-[21px] lg:h-[33px]" src="imgs/LinkedIn-Icon.png" alt="Linkedin icone">
         </div>
       </section>
-      <section id="bem-vindo" class="flex flex-row bg-[#E7E1DF] gap-[43px]">
-        <img src="imgs/banner_i_02.png" alt="Banner shakes e café">
-        <div class="flex flex-col align-center justify-center pr-[135px]">
-          <h6 class="text-[18px] text-marrom-escuro mb-[10px]">Para os amantes de café</h6>
-          <h2 class="text-[50px] text-marrom-claro leading-[55px] mb-[30px]">Bem-vindo a<br> Tiamate Coffee</h2>
-          <p class="text-[16px] text-marrom-preto leading-[20px]">A Tiamate Coffee traduz de maneira clara e objetiva o verdadeiro sabor do café e o seu espírito inovador. Visamos fazer parte da vida das pessoas e diferentes culturas, isso é o que nos motiva a oferecer o café mais gostoso. Por isso, selecionamos as melhores plantações, os grãos, os blends e as pessoas que vão colocar a mão na massa para fazer esse delicioso café.<br><br> Pensamos em fazer os seus momentos mais felizes, seja no café da manhã ou em uma reunião. Individualmente ou entre amigos. À Tiamate Coffee investe em um conceito atual que transmite as pessoas uma sensação de bem estar. Enquanto nosso café aproxima as pessoas, nossos serviços de Wifi gratuito as mantém conectadas. Descubra como navegar na internet enquanto você saboreia um Tiamate.</p>
+      <section id="bem-vindo" class="flex flex-col px-[40px] md:px-[0px] md:flex-row bg-[#E7E1DF] md:gap-[20px] lg:gap-[43px]">
+        <img class="h-auto md:h-[350px] lg:h-auto" src="imgs/banner_i_02.png" alt="Banner shakes e café">
+        <div class="flex flex-col align-center justify-center md:pr-[68px] lg:pr-[135px]">
+          <h6 class="text-marrom-escuro text-[10px] mb-[6px] md:text-[12px] lg:text-[18px] lg:mb-[10px]">Para os amantes de café</h6>
+          <h2 class="text-marrom-claro font-bold text-[16px] leading-[10px] mb-[8px] md:text-[22px] md:leading-[20px] md:mb-[12px] lg:text-[50px] lg:leading-[55px] lg:mb-[30px]">Bem-vindo a<br class="hidden md:block"> Tiamate Coffee</h2>
+          <p class="text-marrom-preto text-[10px] leading-[10px] mb-[30px] md:text-[12px] md:leading-[12px] lg:text-[16px] lg:leading-[20px]">A Tiamate Coffee traduz de maneira clara e objetiva o verdadeiro sabor do café e o seu espírito inovador. Visamos fazer parte da vida das pessoas e diferentes culturas, isso é o que nos motiva a oferecer o café mais gostoso. Por isso, selecionamos as melhores plantações, os grãos, os blends e as pessoas que vão colocar a mão na massa para fazer esse delicioso café.<br><br> Pensamos em fazer os seus momentos mais felizes, seja no café da manhã ou em uma reunião. Individualmente ou entre amigos. À Tiamate Coffee investe em um conceito atual que transmite as pessoas uma sensação de bem estar. Enquanto nosso café aproxima as pessoas, nossos serviços de Wifi gratuito as mantém conectadas. Descubra como navegar na internet enquanto você saboreia um Tiamate.</p>
         </div>
       </section>
-      <section id="valores" class="flex gap-[168px] mt-[163px] mx-[135px]">
-        <div class="w-1/3">
-          <div class="flex items-center gap-[16px] mb-[19px]">
-            <img src="imgs/img_i_missao.png" alt="Missão">
-            <h4 class="text-[24px] text-marrom-claro font-bold">Missão</h4>
+      <section id="valores" class="flex flex-col p-[40px] gap-[30px] md:flex-row md:mt-[80px] md:mx-[50px] md:gap-[50px] md:p-[0px] lg:mt-[160px] lg:mx-[135px] lg:gap-[160px]">
+        <div class="w-full lg:w-1/3">
+          <div class="flex items-center gap-[8px] mb-[12px] md:gap-[12px] md:mb-[15px] lg:gap-[16px] lg:mb-[19px]">
+            <img class="h-[40px] md:h-[52px] lg:h-[82px]" src="imgs/img_i_missao.png" alt="Missão">
+            <h4 class="text-marrom-claro font-bold text-[16px] md:text-[20px] lg:text-[24px]">Missão</h4>
           </div>
-          <p class="text-[16px] text-marrom-preto leading-[20px]">
+          <p class="text-marrom-preto text-[10px] leading-[12px] md:text-[14px] md:leading-[16px] lg:text-[16px] lg:leading-[20px]">
             Fornecer soluções, produtos e serviços de maneira clara e objetiva construindo relacionamentos duradouros com a comunidade, parceiros, colaboradores e sócios, através da criação de valores.
           </p>
         </div>
-        <div class="w-1/3">
-          <div class="flex items-center gap-[16px] mb-[19px]">
-            <img src="imgs/img_i_visao.png" alt="Visão">
-            <h4 class="text-[24px] text-marrom-claro font-bold">Visão</h4>
+        <div class="w-full lg:w-1/3">
+          <div class="flex items-center gap-[8px] mb-[12px] md:gap-[12px] md:mb-[15px] lg:gap-[16px] lg:mb-[19px]">
+            <img class="h-[40px] md:h-[52px] lg:h-[82px]" src="imgs/img_i_visao.png" alt="Visão">
+            <h4 class="text-marrom-claro font-bold text-[16px] md:text-[20px] lg:text-[24px]">Visão</h4>
           </div>
-          <p class="text-[16px] text-marrom-preto leading-[20px]">
+          <p class="text-marrom-preto text-[10px] leading-[12px] md:text-[14px] md:leading-[16px] lg:text-[16px] lg:leading-[20px]">
             Ser referência em inovação e estimular exponencialmente a nossa gestão de maneira diversificada, próspera e justa. Com devoção e disciplina em todas as nossas operações de negócio.
           </p>
         </div>
-        <div class="w-1/3">
-          <div class="flex items-center gap-[16px] mb-[19px]">
-            <img src="imgs/img_i_valores.png" alt="Valores">
-            <h4 class="text-[24px] text-marrom-claro font-bold">Valores</h4>
+        <div class="w-full lg:w-1/3">
+          <div class="flex items-center gap-[8px] mb-[12px] md:gap-[12px] md:mb-[15px] lg:gap-[16px] lg:mb-[19px]">
+            <img class="h-[40px] md:h-[52px] lg:h-[82px]" src="imgs/img_i_valores.png" alt="Valores">
+            <h4 class="text-marrom-claro font-bold text-[16px] md:text-[20px] lg:text-[24px]">Valores</h4>
           </div>
-          <p class="text-[16px] text-marrom-preto leading-[20px]">
+          <p class="text-marrom-preto text-[10px] leading-[12px] md:text-[14px] md:leading-[16px] lg:text-[16px] lg:leading-[20px]">
             Amor ao Trabalho - Organização - Disciplina - Inovação - Busca Contínua Pela Qualidade - Foco no Cliente
           </p>
         </div>
       </section>      
-      <section id="video-cafe" class="mx-[135px] mt-[144px]">
-        <h2 class="text-[50px] text-marrom-claro leading-[55px] font-bold mb-[83px]">Coisas boas acontecem àqueles<br> que gostam de café</h2>
-        <iframe class="w-full mb-[134px]" width="" height="600" src="https://www.youtube.com/embed/aTC_RNYtEb0?si=Gqb22Y-GQNeo7CJr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <section id="video-cafe" class="mt-[20px] mx-[40px] md:mt-[70px] lg:mx-[135px] lg:mt-[144px]">
+        <h2 class="text-marrom-claro font-bold text-[16px] mb-[30px] leading-[20px] md:text-[25px] lg:text-[50px] lg:mb-[83px] lg:leading-[55px]">Coisas boas acontecem àqueles<br> que gostam de café</h2>
+        <iframe class="w-full h-[200px] mb-[40px] md:h-[400px] md:mb-[80px] lg:h-[600px] lg:mb-[134px]" width="" height="" src="https://www.youtube.com/embed/aTC_RNYtEb0?si=Gqb22Y-GQNeo7CJr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </section>
       <section id="banner-segundario" class="relative">
         <img class="w-full" src="imgs/banner_i_03.png" alt="Banner café autentico">
-        <div class="absolute top-[171px] left-[134px]">
-          <h2 class="text-[55px] text-marrom-branco leading-[60px] font-bold">Café Autêntico</h2>
-          <h3 class="text-[50px] text-nu leading-[55px]">Chegou nosso café!<br> Direto da fazenda.</h3>
+        <div class="absolute top-[45px] left-[30px] md:top-[100px] md:left-[80px] lg:top-[171px] lg:left-[134px]">
+          <h2 class="text-marrom-branco font-bold text-[18px] leading-[20px] md:text-[27px] md:leading-[30px] lg:text-[55px] lg:leading-[60px]">Café Autêntico</h2>
+          <h3 class="text-nu text-[18px] leading-[20px] md:text-[27px] md:leading-[30px] lg:text-[55px] lg:leading-[60px]">Chegou nosso café!<br> Direto da fazenda.</h3>
         </div>
       </section>
-      <section id="galeria" class="mx-[135px]">
-        <div class="flex justify-between mt-[169px] mb-[58px]">
+      <section id="galeria" class="mx-[40px] lg:mx-[135px]">
+        <div class="flex justify-between mt-[40px] mb-[15px] md:mt-[80px] lg:mt-[169px] lg:mb-[58px]">
           <div class="flex flex-col justify-center">
-            <h6 class="text-[18px] text-marrom-preto">Para você e seus amigos</h6>
-            <h2 class="text-[50px] text-marrom-claro font-bold">Ambiente agradável</h2>
+            <h6 class="text-marrom-preto text-[10px] md:text-[14px] lg:text-[18px]">Para você e seus amigos</h6>
+            <h2 class="text-marrom-claro font-bold text-[16px] md:text-[32px] lg:text-[50px]">Ambiente agradável</h2>
           </div>
-          <div class="flex items-center gap-[11px]">
-            <h6 class="text-[18px] text-marrom-preto">Veja mais</h6>
-            <img class="cursor-pointer" src="imgs/instagram-Icon-grande.png" alt="Instagram icone">
+          <div class="flex items-center gap-[6px] lg:gap-[11px]">
+            <h6 class="text-[10px] md:text-[14px] lg:text-[18px] text-marrom-preto">Veja mais</h6>
+            <img class="cursor-pointer h-[28px] md:h-[40px] lg:h-[62px]" src="imgs/instagram-Icon-grande.png" alt="Instagram icone">
           </div>
         </div>
-        <div class="grid grid-cols-3">
+        <div class="grid grid-cols-2 md:grid-cols-3">
           <img class="w-full h-auto" src="imgs/img_i_ambiente_01.png" alt="Foto galeria 01">
           <img class="w-full h-auto" src="imgs/img_i_ambiente_02.png" alt="Foto galeria 02">
           <img class="w-full h-auto" src="imgs/img_i_ambiente_03.png" alt="Foto galeria 03">
@@ -130,68 +128,68 @@
         </div>
       </section>
       <section id="cardapio-carrosel" class="flex flex-col justify-center items-center bg-[#E7E1DF]">
-        <h6 class="text-[18px] text-marrom-preto mt-[93px]">Confira nosso</h6>
-        <h2 class="text-[50px] text-marrom-claro font-bold">Cardápio</h2>
-        <div class="flex items-center gap-[70px] my-[60px]">
-          <img id="arrow-left" class="cursor-pointer w-[30px] h-[30px]" src="imgs/Arrow_2.png" alt="Seta esquerda">
-          <div id="carousel-container" class="flex overflow-hidden w-[600px]">
+        <h6 class="text-marrom-preto text-[12px] mt-[40px] md:text-[16px] md:mt-[60px] lg:text-[18px] lg:mt-[93px]">Confira nosso</h6>
+        <h2 class="text-marrom-claro font-bold text-[30px] md:text-[42px] lg:text-[50px]">Cardápio</h2>
+        <div class="flex items-center gap-[20px] my-[20px] md:gap-[45px] md:my-[40px] lg:gap-[70px] lg:my-[60px]">
+          <img id="arrow-left" class="cursor-pointer w-[15px] h-[15px] md:w-[30px] md:h-[30px]" src="imgs/Arrow_2.png" alt="Seta esquerda">
+          <div id="carousel-container" class="flex overflow-hidden w-[300px] md:w-[450px] lg:w-[600px]">
             <div id="carousel-items" class="flex transition-transform duration-300">
-              <img class="w-[300px]" src="imgs/Bebidas_1.png" alt="Bebida 1">
-              <img class="w-[300px]" src="imgs/Bebidas_2.png" alt="Bebida 2">
-              <img class="w-[300px]" src="imgs/Bebidas_3.png" alt="Bebida 3">
-              <img class="w-[300px]" src="imgs/Bebidas_4.png" alt="Bebida 4">
-              <img class="w-[300px]" src="imgs/Bebidas_5.png" alt="Bebida 5">
-              <img class="w-[300px]" src="imgs/Bebidas_6.png" alt="Bebida 6">
+              <img class="w-[180px] md:w-[200px] lg:w-[300px]" src="imgs/Bebidas_1.png" alt="Bebida 1">
+              <img class="w-[180px] md:w-[200px] lg:w-[300px]" src="imgs/Bebidas_2.png" alt="Bebida 2">
+              <img class="w-[180px] md:w-[200px] lg:w-[300px]" src="imgs/Bebidas_3.png" alt="Bebida 3">
+              <img class="w-[180px] md:w-[200px] lg:w-[300px]" src="imgs/Bebidas_4.png" alt="Bebida 4">
+              <img class="w-[180px] md:w-[200px] lg:w-[300px]" src="imgs/Bebidas_5.png" alt="Bebida 5">
+              <img class="w-[180px] md:w-[200px] lg:w-[300px]" src="imgs/Bebidas_6.png" alt="Bebida 6">
             </div>
           </div>
-          <img id="arrow-right" class="cursor-pointer w-[30px] h-[30px]" src="imgs/Arrow_1.png" alt="Seta direita">
+          <img id="arrow-right" class="cursor-pointer w-[15px] h-[15px] md:w-[30px] md:h-[30px]" src="imgs/Arrow_1.png" alt="Seta direita">
         </div>
-        <button class="bg-[#CF9A5A] text-[18px] text-marrom-preto font-[600] h-[60px] w-[300px] rounded-[5px] mb-[80px] hover:bg-marrom-claro transition-colors duration-300 ease-in-out">Ver mais</button>
+        <button class="bg-[#CF9A5A] text-marrom-preto font-[600] rounded-[5px] text-[12px] h-[30px] w-[150px] mb-[40px] md:text-[14px] md:h-[45px] md:w-[225px] md:mb-[60px] lg:text-[18px] lg:h-[60px] lg:w-[300px] lg:mb-[80px] hover:bg-marrom-claro transition-colors duration-300 ease-in-out">Ver mais</button>
       </section>      
-      <section id="cadastro-franquiado" class="flex gap-[68px] bg-marrom-preto">
-        <div class="mt-[69px] ml-[135px] flex-1">
-          <h5 class="text-[18px] text-[#CF9A5A]">Entre em contato</h5>
-          <h2 class="text-[50px] text-nu font-bold">Abra sua Franquia</h2>
-          <h6 class="text-[16px] text-[#cf9A5A] mb-[20px]">
-            Preencha o formulário abaixo que entraremos em contato com<br>
+      <section id="cadastro-franquiado" class="flex bg-marrom-preto gap-[20px] md:gap-[40px] lg:gap-[68px]">
+        <div class="flex-1 mt-[20px] mr-[40px] ml-[40px] md:mt-[35px] md:mr-[0px] md:ml-[70px] lg:mt-[69px] lg:ml-[135px]">
+          <h5 class="text-[#CF9A5A] text-[12px] md:text-[14px] lg:text-[18px]">Entre em contato</h5>
+          <h2 class="text-nu font-bold text-[18px] md:text-[30px] lg:text-[50px]">Abra sua Franquia</h2>
+          <h6 class="text-[#cf9A5A] text-[10px] leading-[12px] mb-[12px] md:text-[12px] md:leading-[14px] lg:text-[16px] lg:mb-[20px] lg:leading-[20px]">
+            Preencha o formulário abaixo que entraremos em contato com<br class="hidden lg:block">
             você o mais rápido possível.
           </h6>
-          <form class="flex flex-col gap-[10px]">
-            <input class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] w-full bg-nu" type="text">
-            <input class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] w-full bg-nu" type="email">
-            <input class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] w-full bg-nu" type="tel">
-            <div class="flex gap-[10px]">
-              <select class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] flex-1 bg-nu">
+          <form class="flex flex-col gap-[5px] lg:gap-[10px]">
+            <input class="text-preto-medio border-none rounded-[5px] focus:outline-none w-full bg-nu px-[4px] py-[8px] text-[8px] h-[20px] md:px-[8px] md:py-[12px] md:text-[12px] md:h-[30px] lg:px-[10px] lg:py-[15px] lg:text-[16px] lg:h-[60px]" type="text">
+            <input class="text-preto-medio border-none rounded-[5px] focus:outline-none w-full bg-nu px-[4px] py-[8px] text-[8px] h-[20px] md:px-[8px] md:py-[12px] md:text-[12px] md:h-[30px] lg:px-[10px] lg:py-[15px] lg:text-[16px] lg:h-[60px]" type="email">
+            <input class="text-preto-medio border-none rounded-[5px] focus:outline-none w-full bg-nu px-[4px] py-[8px] text-[8px] h-[20px] md:px-[8px] md:py-[12px] md:text-[12px] md:h-[30px] lg:px-[10px] lg:py-[15px] lg:text-[16px] lg:h-[60px]" type="tel">
+            <div class="flex gap-[5px] lg:gap-[10px]">
+              <select class="text-preto-medio border-none rounded-[5px] focus:outline-none w-full bg-nu px-[4px] py-[8px] text-[8px] h-[20px] md:px-[8px] md:py-[12px] md:text-[12px] md:h-[30px] lg:px-[10px] lg:py-[15px] lg:text-[16px] lg:h-[60px]">
                 <option></option>
                 <option>CE</option>
                 <option>SP</option>
                 <option>RJ</option>
               </select>
-              <input class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] flex-1 bg-nu" type="text">
+              <input class="text-preto-medio border-none rounded-[5px] focus:outline-none w-full bg-nu px-[4px] py-[8px] text-[8px] h-[20px] md:px-[8px] md:py-[12px] md:text-[12px] md:h-[30px] lg:px-[10px] lg:py-[15px] lg:text-[16px] lg:h-[60px]" type="text">
             </div>
-            <select class="px-[10px] py-[15px] text-[16px] text-preto-medio border-none rounded-[5px] focus:outline-none h-[60px] w-full bg-nu">
+            <select class="text-preto-medio border-none rounded-[5px] focus:outline-none w-full bg-nu px-[4px] py-[8px] text-[8px] h-[20px] md:px-[8px] md:py-[12px] md:text-[12px] md:h-[30px] lg:px-[10px] lg:py-[15px] lg:text-[16px] lg:h-[60px]">
               <option></option>
               <option>Instagram</option>
               <option>Facebook</option>
             </select>
-            <button class="border-none focus:outline-none h-[60px] bg-marrom-branco rounded-[5px] text-[16px] text-marrom-preto font-[600] hover:bg-[#c06f3d] transition-colors duration-300 ease-in-out" type="submit">
+            <button class="border-none focus:outline-none text-marrom-preto font-[600] hover:bg-[#c06f3d] transition-colors duration-300 ease-in-out bg-marrom-branco rounded-[5px] mb-[20px] text-[8px] h-[20px] md:text-[12px] md:h-[30px] lg:text-[16px] lg:h-[60px]" type="submit">
               Enviar Cadastro
             </button>
           </form>
         </div>
-        <img src="imgs/img_i_franquia.png" alt="Imagem Franquia" class="object-cover">
+        <img class="hidden md:h-[400px] md:block lg:h-auto" src="imgs/img_i_franquia.png" alt="Imagem Franquia" class="object-cover">
       </section> 
-      <section id="depoimentos" class="px-4 md:px-0 py-[60px] md:py-[130px] relative">
-        <h6 class="text-center text-marrom-escuro text-[12px] md:text-[18px]">Depoimentos</h6>
-        <h2 class="text-center text-marrom-claro text-[24px] md:text-[50px] font-bold">Tudo sobre Tiamate Coffee
+      <section id="depoimentos" class="relative px-[40px] py-[30px] md:px-0 md:py-[60px] lg:py-[130px] md:h-[600px] lg:h-[750px] mb-[30px]">
+        <h6 class="text-center text-marrom-escuro text-[10px] md:text-[12px] lg:text-[18px]">Depoimentos</h6>
+        <h2 class="text-center text-marrom-claro text-[18px] md:text-[30px] lg:text-[50px] font-bold">Tudo sobre Tiamate Coffee
         </h2>
         <img 
-            class="hidden md:block md:mt-[40px]"
+            class="hidden md:block mt-[40px]"
             src="imgs/img_i_sobre_01.png" 
             alt="rapaz-servindo-café"
         />
-        <div class="overflow-y-hidden mt-[26px] relative md:absolute bottom-[196px] right-0 md:w-3/4 md:overflow-hidden">
-            <ul id="carrossel" class="flex w-[calc(calc(100%_*_5)_+_calc(16px_*_4))] md:w-[calc(calc(400px_*_5)_+_calc(40px_*_4))] gap-4 md:gap-[40px] relative duration-200 left-0">
+        <div class="overflow-y-hidden bottom-[-20px] md:bottom-[350px] lg:mt-[26px] relative lg:bottom-[396px] lg:right-[-350px] lg:w-3/4 lg:overflow-hidden">
+            <ul id="carrossel" class="flex w-[calc(calc(100%_*_6))] md:w-[calc(calc(100%_*_6))] lg:w-[calc(calc(400px_*_6))] gap-4 lg:gap-[40px] relative duration-200 left-0">
                 <li class="flex flex-col w-1/3 md:w-[400px] bg-[#e7e1df] rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
                     <div class="estrelas flex gap-[4px] mb-4">
                         <img src="imgs/estrela.png" alt="estrela">
@@ -291,7 +289,7 @@
               </li>
             </ul>
         </div>
-        <div class="controles hidden absolute right-[60px] bottom-[130px] md:flex gap-4">
+        <div class="controles hidden absolute right-[60px] bottom-[30px] lg:flex gap-4">
             <div id="prev" class="w-[45px] h-[45px] bg-marrom-claro hover:bg-marrom-escuro duration-200 rounded-full flex items-center justify-center relative rotate-180 cursor-pointer">
                 <div class="w-[12px] h-[2px] bg-white"></div>
                 <div class="w-[8px] h-[8px] border-r-2 border-r-white border-b-2 border-b-white -rotate-45 absolute top-[(50%_-_8px)] left-[(50%_-_2px)]"></div>
@@ -303,24 +301,48 @@
         </div>
       </section>
     </main>
-
-    <footer>
-
+    <footer id="footer" class="bg-preto-medio px-[30px] py-[20px] md:px-[50px] md:py-[35px] lg:px-[135px] lg:py-[75px]">
+      <div class="flex justify-between items-center mb-[12px] md:mb-[20px] lg:mb-[50px]">
+        <img class="cursor-pointer w-[80px] md:w-[120px] lg:w-[160px]" src="imgs/Logo.png" alt="Imagem Logo">
+        <ul class="flex flex-row text-nu font-[500] text-[6px] gap-[10px] md:text-[12px] md:gap-[28px] lg:text-[18px] lg:gap-[45px]">
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="index.html">Início</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="nosso-cafe.html">Nosso Café</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="#">Notícias</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="contato.html">Contato</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="cardapio.html">Cardápio</a></li>
+          <li><a class="hover:text-marrom-claro duration-200 ease-in-out" href="fraquia.html">Franquia</a></li>
+        </ul>
+      </div>
+      <hr class="border-[1px] border-marrom-claro">
+      <div class="flex justify-between items-center mt-[12px] md:mt-[20px] lg:mt-[40px]">
+        <div class="flex items-center gap-[12px] md:gap-[20px] lg:gap-[35px]">
+          <h5 class="text-nu font-[500] text-[8px] leading-[10px] md:text-[12px] md:leading-[14px] lg:text-[14px] lg:leading-[17px]">Curta e <br>Compartilhe</h5>
+          <div class="flex gap-[6px] md:gap-[12px] lg:gap-[25px]">
+            <img class="cursor-pointer h-[12px] md:h-[20px] lg:h-[26px]" src="imgs/facebook-Icon.png" alt="Facebook icone">
+            <img class="cursor-pointer h-[12px] md:h-[20px] lg:h-[26px]" src="imgs/instagram-Icon.png" alt="Instagram icone">
+            <img class="cursor-pointer h-[12px] md:h-[20px] lg:h-[26px]" src="imgs/youtube-Icon.png" alt="Youtube icone">
+            <img class="cursor-pointer h-[12px] md:h-[20px] lg:h-[26px]" src="imgs/LinkedIn-Icon.png" alt="Linkedin icone">
+          </div>
+        </div>
+        <div class="flex items-center gap-[10px] md:gap-[16px] lg:gap-[30px]">
+          <h6 class="text-marrom-claro font-[600] text-[4px] md:text-[8px] lg:text-[10px]">&copy; 2021 Tiamate - Todos os Direitos Reservados</h6>
+          <img class="cursor-pointer w-[50px] md:w-[80px] lg:w-[100px]" src="imgs/Group 5.png" alt="Imagem Grupo Gracom">
+        </div>
+      </div>
     </footer>
-</body>
-
-<script>
+  </body>
+  <script>
   let c_click = 0;
     next.onclick = () => {
         if(c_click < 3){
             c_click += 1;
-            carrossel.style.left = `-${c_click * 350}px`;
+            carrossel.style.left = `-${c_click * 420}px`;
         }
     }
     prev.onclick = () => {
         if(c_click > 0){
             c_click -= 1;
-            carrossel.style.left = `-${c_click * 350}px`;
+            carrossel.style.left = `-${c_click * 420}px`;
         }
     }
 
@@ -362,5 +384,5 @@
     arrowLeft.addEventListener('click', movePrev);
   });
 
-</script>
+  </script>
 </html>
