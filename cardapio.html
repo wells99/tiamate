@@ -38,7 +38,8 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="text-[15px]/[15px] flex flex-col items-center justify-center lg:flex-row gap-[5px] bg-preto-medio lg:h-28 lg:text-lg/[19,58px]">
+  <header
+    class="text-[15px]/[15px] flex flex-col items-center justify-center lg:flex-row gap-[5px] bg-preto-medio lg:h-28 lg:text-lg/[19,58px]">
 
     <img class="sm:object-scale-down p-[10px]" src="./imgs/Logo.png" alt="logo header">
     <ul class="w-auto flex text-nude items-center gap-[10px] lg:gap-11 lg:ml-14">
@@ -48,7 +49,8 @@
       <li>Contato</li>
       <li>Cardápio</li>
     </ul>
-    <button class="bg-marrom-branco text-preto-medio h-[40px] w-[150px] m-[7px] lg:ml-56 lg:h-12 lg:w-56 font-archivo rounded-md font-semibold">
+    <button
+      class="bg-marrom-branco text-preto-medio h-[40px] w-[150px] m-[7px] lg:ml-56 lg:h-12 lg:w-56 font-archivo rounded-md font-semibold">
       Seja um Franqueado
     </button>
 
@@ -57,7 +59,8 @@
   <main>
 
     <section id="banners" class="relative flex items-center">
-      <h1 class="absolute text-[30px]/[30px] ml-[20px] lg:mt-36 lg:ml-36 text-nude lg:text-6xl font-bold">O verdadeiro<br>sabor do Café.</h1>
+      <h1 class="absolute text-[30px]/[30px] ml-[20px] lg:mt-36 lg:ml-36 text-nude lg:text-6xl font-bold">O
+        verdadeiro<br>sabor do Café.</h1>
       <div class="flex gap-[29.5px] absolute mt-[130px] ml-[20px] lg:mt-[304px] lg:ml-36">
         <a href="#">
           <img src="./imgs/facebook-Icon.png" alt="facebook-Icon">
@@ -118,7 +121,7 @@
       </div>
     </section>
 
-    <section class="bg-marrom-escuro lg:mt-[190px] flex flex-col lg:flex lg:justify-end lg:gap-[30px] items-center">
+    <section class="bg-marrom-escuro lg:mt-[190px] flex flex-col lg:flex-row lg:flex lg:justify-end lg:gap-[30px] items-center">
       <div class="my-[50px]">
         <p class="text-[18px]/[19.6px] text-marrom-clarinho">Entre em contato</p>
         <h1 class="text-[50px]/[54.4px] text-marrom-cinza font-bold mt-[6px]">Abra sua Franquia</h1>
@@ -144,18 +147,18 @@
       </div>
     </section>
 
-    <section id="depoimentos" class="mt-[130px] w-auto">
+    <section id="depoimentos" class="mt-[130px] w-auto flex flex-col">
 
       <p class="flex justify-center text-[18px]/[19.6px] text-marrom-escuro">Depoimentos</p>
       <h1 class="flex justify-center text-[50px]/[54.4px] text-marrom-claro mt-[13px] font-bold">Tudo sobre
         TiamateCoffee</h1>
 
-      <div class="flex mt-[39px]">
+      <div class="flex flex-col items-center lg:flex-row mt-[39px] gap-[15px]">
         <div>
           <img src="./imgs/banner-depoimentos.png" alt="banner-depoimentos">
         </div>
 
-        <div class="flex flex-col gap-[25px] w-auto absolute lg:ml-[335px] lg:mt-[30px]">
+        <div class="flex flex-col items-center lg:flex-row gap-[25px] w-auto lg:absolute lg:ml-[335px] lg:mt-[30px]">
 
           <div
             class="flex flex-col justify-center items-center gap-[15px] w-[360px] h-[303px] bg-marrom-branco-claro rounded-[5px]">
@@ -236,46 +239,50 @@
     <footer id="footer" class="bg-preto-medio">
       <div>
         <div>
-          
-          <div id="linha1-footer" class="bg-preto-medio h-28 w-full">  
+
+          <div id="linha1-footer" class="bg-preto-medio h-28 w-full">
             <div class="flex justify-between items-center h-28 w-full pt-[74px]">
-              <a href="#" class="pl-[135px]"><img class="object-scale-down w-[160px] " src="./imgs/Logo.png" alt="cabeçalho do logotipo"></a>
+              <a href="#" class="pl-[135px]"><img class="object-scale-down w-[160px] " src="./imgs/Logo.png"
+                  alt="cabeçalho do logotipo"></a>
               <div class="pr-[135px]">
                 <ul class="flex justify-center items-center gap-6 font-medium	text-[#F5E7DA]">
                   <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="index.html">Início</a></li>
-                  <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="nosso-cafe.html">Nosso Café</a></li>
+                  <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="nosso-cafe.html">Nosso Café</a>
+                  </li>
                   <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="#">Notícias</a></li>
                   <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="contato.html">Contato</a></li>
                   <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="cardapio.html">Cardápio</a></li>
                   <li class="hover:cursor-pointer hover:text-marrom-branco"><a href="cardapio.html">Franquia</a></li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+
+          <div id="linha" class="h-1 w-full text-marrom-claro pl-[135px] pr-[135px]  ">
+            <p class="w-full h-[1px] bg-marrom-claro mt-[50px]"></p>
+          </div>
+          <div class="flex justify-between items-center ml-[135px] pb-[69px] pt-10">
+
+            <div class="flex items-center justify-around">
+              <div>
+                <p class="text-nude font-Archivo">Curta e </p>
+                <p class="text-nude font-Archivo"> Compartilhe</p>
+              </div>
+              <div class="flex gap-2 ml-8  items-center justify-center">
+                <img src="imag.1/facebook.png" alt="#" class="w-6 cursor-pointer">
+                <img src="imag.1/instagram.png" alt="#" class="w-6 cursor-pointer">
+                <img src="imag.1/youtube.png" alt="#" class="w-6 cursor-pointer">
+                <img src="imag.1/linkedin.png" alt="#" class="w-6 cursor-pointer">
+              </div>
+            </div>
+
+            <div class="flex  ml-8 gap-8 items-center justify-center pr-[135px] text-marrom-claro">
+              <p>© 2021 Tiamate - Todos os Direitos Reservados</p>
+              <img src="imgs/img-franquia/Tiamate-Coffee/gracom-logo.png" alt="logo">
+            </div>
           </div>
         </div>
-  
-  
-        <div id="linha" class="h-1 w-full text-marrom-claro pl-[135px] pr-[135px]  "><p class="w-full h-[1px] bg-marrom-claro mt-[50px]"></p></div>
-        <div class="flex justify-between items-center ml-[135px] pb-[69px] pt-10">
-        
-          <div class="flex items-center justify-around">
-          <div>
-          <p class="text-nude font-Archivo">Curta e </p>
-          <p class="text-nude font-Archivo"> Compartilhe</p>
-          </div>
-          <div class="flex gap-2 ml-8  items-center justify-center">
-            <img src="imag.1/facebook.png" alt="#" class="w-6 cursor-pointer">
-            <img src="imag.1/instagram.png" alt="#" class="w-6 cursor-pointer">
-            <img src="imag.1/youtube.png" alt="#" class="w-6 cursor-pointer">
-            <img src="imag.1/linkedin.png" alt="#" class="w-6 cursor-pointer">
-          </div>
-         </div>
-        
-         <div class="flex  ml-8 gap-8 items-center justify-center pr-[135px] text-marrom-claro">
-            <p >© 2021 Tiamate - Todos os Direitos Reservados</p>
-            <img src="imgs/img-franquia/Tiamate-Coffee/gracom-logo.png" alt="logo">
-          </div>
-        </div>
-      </div>
     </footer>
 
 </body>
